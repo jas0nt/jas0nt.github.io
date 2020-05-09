@@ -1,0 +1,4 @@
+Sitemap: https://jas0nt.github.io/sitemapindex.xml
+
+User-Agent: *
+Host: jas0nt.github.io
