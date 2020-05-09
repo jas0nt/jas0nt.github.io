@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Jas0nt"  # (translatable)
-BLOG_TITLE = "Jason's Blog"  # (translatable)
+BLOG_TITLE = "π"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://jas0nt.github.io/"
@@ -25,7 +25,7 @@ SITE_URL = "https://jas0nt.github.io/"
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://jas0nt.github.io/"
 BLOG_EMAIL = "taoeta@gmail.com"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."  # (translatable)
+BLOG_DESCRIPTION = "Writing."  # (translatable)
 
 # Nikola is multilingual!
 #
