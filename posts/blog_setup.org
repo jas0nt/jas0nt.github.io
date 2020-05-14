@@ -1,0 +1,60 @@
+#+BEGIN_COMMENT
+.. title: orgmode + nikola setup your blog site
+.. slug: blog_setup
+.. date: 2020-05-09 22:51:24 UTC+08:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+
+#+END_COMMENT
+
+
+* Nikola
+
+** Install Nikola
+#+BEGIN_SRC shell
+  pip3 install Nikola[extras]
+#+END_SRC
+
+** Install Nikola orgmode plugin
+#+BEGIN_SRC shell
+  nikola plugin -i orgmode
+#+END_SRC
+
+** Init Nikola site
+In your github pages repo:
+#+BEGIN_SRC shell
+  nikola init --demo
+#+END_SRC
+~--demon~ options is used to create some demo within the site.
+
+** emacs-htmlize
+Need to install the emacs-htmlize package for converting org file to html.
+#+BEGIN_SRC emacs-lisp
+  (use-package htmlize :ensre t)
+#+END_SRC
+
+** new post
+#+BEGIN_SRC shell
+  nikola new_post posts/my_first_post.org
+#+END_SRC
+Write your content in the org file.
+
+** build and preview
+#+BEGIN_SRC shell
+  nikola build
+  nikola auto --browser
+#+END_SRC
+When you are done writing, you should ~nikola build~ your site before ~deploy~.
+~nikola auto~ will start the development server for development only, ~--browser~ option will open http://127.0.0.1:8000/ in the default web browser.
+
+** deploy
+Deploy your glog to github pages.
+#+BEGIN_SRC shell
+  nikola github_deploy
+#+END_SRC
+
+
+All set, enjoy writing.
