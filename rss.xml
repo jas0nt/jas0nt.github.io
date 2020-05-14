@@ -1,13 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>π</title><link>https://jas0nt.github.io/</link><description>Writing.</description><atom:link href="https://jas0nt.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2020 &lt;a href="mailto:taoeta@gmail.com"&gt;Jas0nt&lt;/a&gt; </copyright><lastBuildDate>Sat, 09 May 2020 14:35:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>test</title><link>https://jas0nt.github.io/posts/test/</link><dc:creator>Jas0nt</dc:creator><description>&lt;div id="outline-container-orgc53ffc8" class="outline-2"&gt;
-&lt;h2 id="orgc53ffc8"&gt;test org&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc53ffc8"&gt;
-&lt;p&gt;
-在这里书写你的文章。
-&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>π</title><link>https://jas0nt.github.io/</link><description>Writing.</description><atom:link href="https://jas0nt.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>zh_cn</language><copyright>Contents © 2020 &lt;a href="mailto:taoeta@gmail.com"&gt;Jas0nt&lt;/a&gt; </copyright><lastBuildDate>Thu, 14 May 2020 13:50:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>orgmode + nikola setup your blog site</title><link>https://jas0nt.github.io/posts/blog_setup/</link><dc:creator>Jas0nt</dc:creator><description>&lt;div id="outline-container-orgc6db029" class="outline-2"&gt;
+&lt;h2 id="orgc6db029"&gt;Nikola&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc6db029"&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-orge0128ee" class="outline-3"&gt;
+&lt;h3 id="orge0128ee"&gt;Install Nikola&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orge0128ee"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip3 install Nikola[extras]
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org53d0c18" class="outline-3"&gt;
-&lt;h3 id="org53d0c18"&gt;level two&lt;/h3&gt;
+&lt;div id="outline-container-org9904eef" class="outline-3"&gt;
+&lt;h3 id="org9904eef"&gt;Install Nikola orgmode plugin&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org9904eef"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola plugin -i orgmode
+&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>https://jas0nt.github.io/posts/test/</guid><pubDate>Sat, 09 May 2020 14:20:47 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;
+
+&lt;div id="outline-container-org520d3d9" class="outline-3"&gt;
+&lt;h3 id="org520d3d9"&gt;Init Nikola site&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org520d3d9"&gt;
+&lt;p&gt;
+In your github pages repo:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola init --demo
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+&lt;code&gt;--demon&lt;/code&gt; options is used to create some demo within the site.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgbc00e79" class="outline-3"&gt;
+&lt;h3 id="orgbc00e79"&gt;emacs-htmlize&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgbc00e79"&gt;
+&lt;p&gt;
+Need to install the emacs-htmlize package for converting org file to html.
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;htmlize&lt;/span&gt; &lt;span class="nv"&gt;:ensre&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org45e1037" class="outline-3"&gt;
+&lt;h3 id="org45e1037"&gt;new post&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org45e1037"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola new_post posts/my_first_post.org
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+Write your content in the org file.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org242f81c" class="outline-3"&gt;
+&lt;h3 id="org242f81c"&gt;build and preview&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org242f81c"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola build
+nikola auto --browser
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+When you are done writing, you should &lt;code&gt;nikola build&lt;/code&gt; your site before &lt;code&gt;deploy&lt;/code&gt;.
+&lt;code&gt;nikola auto&lt;/code&gt; will start the development server for development only, &lt;code&gt;--browser&lt;/code&gt; option will open &lt;a href="http://127.0.0.1:8000/"&gt;http://127.0.0.1:8000/&lt;/a&gt; in the default web browser.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org3403e11" class="outline-3"&gt;
+&lt;h3 id="org3403e11"&gt;deploy&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org3403e11"&gt;
+&lt;p&gt;
+Deploy your glog to github pages.
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola github_deploy
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+All set, enjoy writing.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>https://jas0nt.github.io/posts/blog_setup/</guid><pubDate>Sat, 09 May 2020 14:51:24 GMT</pubDate></item></channel></rss>
