@@ -91,7 +91,7 @@ BLOG_DESCRIPTION = "Writing."  # (translatable)
 # in the default language will be shown instead.
 
 # What is the default language?
-DEFAULT_LANG = "zh_cn"
+DEFAULT_LANG = "en"
 
 # What other languages do you have?
 # The format is {"translationcode" : "path/to/translation" }
@@ -139,9 +139,9 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/archive.html", "文章归档"),
-        ("/categories/", "标签"),
-        ("/rss.xml", "RSS 源"),
+        ("/archive.html", "Archive"),
+        ("/categories/", "Tags"),
+        ("/rss.xml", "RSS feed"),
     ),
 }
 
