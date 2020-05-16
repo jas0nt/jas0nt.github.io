@@ -51,7 +51,7 @@ When you are done writing, you should ~nikola build~ your site before ~deploy~.
 ~nikola auto~ will start the development server for development only, ~--browser~ option will open http://127.0.0.1:8000/ in the default web browser.
 
 ** deploy
-Deploy your glog to github pages.
+Deploy your blog to github pages.
 #+BEGIN_SRC shell
   nikola github_deploy
 #+END_SRC
